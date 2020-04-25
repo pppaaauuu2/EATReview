@@ -38,6 +38,7 @@ To retrieve all the information from pubmed when te project is created and when 
 
 This exchange could be done using email. This way, when defining a reviewer an email address would be associated. When the project is launched, an email could be sent to every reviewer with the data to set their computer with all the papers informations and with their share of the workload assigned. 
 At that point, the reviewer could retrieve all the information in pubmed. 
+
 Every time a certain amount of work is done or when the user choses to do that, a message is sent to the rest of the reviewers with an update on the work done so everyone can integrate that information with their local data.
 
 ### OBJECTIVES
