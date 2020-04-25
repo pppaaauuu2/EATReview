@@ -21,8 +21,24 @@ When defining a manual step, it should be possible to add fields to those alread
 
 These extra fields could be used too to report on the selected papers after the review, so it could be the final result of the review and not only the result of the classification process. 
 
+To validate the reviewing process, a certain number of papers should be reviewed by multiple reviewers, and then the team manager should decide if he review process is robust.
+
+It should be possible to control each reviewer contribution to the process. When there are reviewers different contribuition and pace, there must be a defined policy to distribute the workload to avoid unwanted redundant work or subsets of data never analized. 
+In a server-client architecture this would be a simple problem to resolve, but as what I'm trying to implement will consist in multiple computers using this program at different times and locations it may not be as simple. To be able to keep track of the global progress with these requirements there should be some sort of asynchronous comunications between the reviewers.
+One way I see it could be solved is defining a sammple set size. The papers to review would be divided in n samples of that size asigned to each reviewer. Some of them may be redundant for the validation process. When a reviewer end a set, a signal may be sent to the other letting them know the result of the review and the next set in revision by that reviewer, so no other reviewer would review it too. 
 
 ### OBJECTIVES
 
+#### Import de PubMed query result
+##### Get all indexed data
+#### Define the classification steps
+##### Add columns to the model
+##### Add reviewers to the process
+###### Define each reviewer contribution
+#### Distribute the work
+##### Create redundant sample
+#### Perform the manual steps
+#### Generate report & subsets data
+##### Export results
 
 ### SECUNDARY OBJECTIVES 
