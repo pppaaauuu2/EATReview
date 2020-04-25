@@ -8,7 +8,18 @@
 ### INTRODUCTION
 
 The idea consist in creating a software platform to sort the result of a PubMed query according to a review strategy that could consist in different automatic or manual steps performed by multiple reviewers.
+
+
+
 I've found a similar project based on a web platform. But as far as I know, it only classifies pubmed references in a single step. I liked its reviewing interface. Is similar to what I imagined. But I would like to have the classification tree in a side and put the paper in the end of the tree that corresponds to the current step.
+
+###### http://abstrackr.cebm.brown.edu/
+
+###### If you use abstrackr for your project and subsequently publish, please consider citing us using the following citation:
+
+###### Byron C. Wallace, Kevin Small, Carla E. Brodley, Joseph Lau and Thomas A. Trikalinos. Deploying an interactive machine learning system in an evidence-based practice center: abstrackr. In Proc. of the ACM International Health Informatics Symposium (IHI), p.819--824. 2012.
+
+###### Questions, kudos and gripes should be sent to Byron Wallace (byron.wallace@gmail.com).
 
 Users would be able to see how many papers are in every branch, how many are left to review and other statistics on ow the review is been performed. 
 
@@ -45,14 +56,22 @@ Every time a certain amount of work is done or when the user choses to do that, 
 
 #### Import de PubMed query result
 ##### -Get all indexed data
-#### Define the classification steps
+##### -Save all indexed data
+As the data will be a colection of papers with a fixed set of attributes and some other attributes that may be added later, and with 
+no need of big calculations accross the collection, Im thining in mongodb as a database manager.
+The conversion from JSON to java object is easy and the implementation  of a data model would be completely under the program control.
+#### Define the project
+##### -Create the classification steps
 ##### -Add columns to the model
 ##### -Add reviewers to the process
 ###### --Define each reviewer contribution
 #### Distribute the work
+##### -Execute automated classification steps
+##### -Divide remaining work 
 ##### -Create redundant sample
+##### -Send project data to reviewers
 #### Perform the manual steps
-#### -Send updates
+##### -Send updates
 #### Generate report & subsets data
 ##### -Export results
 
