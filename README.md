@@ -43,15 +43,16 @@ Every time a certain amount of work is done or when the user choses to do that, 
 ### OBJECTIVES
 
 #### Import de PubMed query result
-##### Get all indexed data
+##### -Get all indexed data
 #### Define the classification steps
-##### Add columns to the model
-##### Add reviewers to the process
-###### Define each reviewer contribution
+##### -Add columns to the model
+##### -Add reviewers to the process
+###### --Define each reviewer contribution
 #### Distribute the work
-##### Create redundant sample
+##### -Create redundant sample
 #### Perform the manual steps
+#### -Send updates
 #### Generate report & subsets data
-##### Export results
+##### -Export results
 
 ### SECUNDARY OBJECTIVES 
